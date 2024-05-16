@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^360cabi.com
+RewriteRule ^(.*)$ http://localhost/360cabi/$1 [R=301,L]
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)/$ $1.php [NC,L]
+ErrorDocument 404 http://localhost/360cabi/404/
