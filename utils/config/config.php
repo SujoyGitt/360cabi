@@ -2,7 +2,7 @@
 
     ob_start();
 
-    $_baseurl = 'http://localhost/360cabi/';
+    $_baseurl = 'https://sujoygitt.github.io/360cabi/';
 
     $_baseMedium = "";
 
